@@ -1,0 +1,43 @@
+The Test Case: 
+0------1\	-
+|    / | \
+|   /  |  2
+|  /   | /
+4------3/
+
+1. Convert from adjacency matrix to adjacency list: 
+
+	Vertex 0: 0 1 4 
+	Vertex 1: 1 0 2 3 4 
+	Vertex 2: 2 1 3 
+	Vertex 3: 3 1 2 4 
+	Vertex 4: 4 0 1 3 
+
+	Time Complexity: O(N^2) becuase you have to linearly
+	scan all elements of a NxN 2D adjacency matrix, 
+	where N = number of vertices, and insert values 
+	into Linked List in O(1) time.
+
+2. Convert from adjacency list to an incidence matrix:
+
+	1 	1 	0 	0 	0 	0 	0 
+	1 	0 	1 	1 	1 	0 	0 
+	0 	0 	1 	0 	0 	1 	0 
+	0 	0 	0 	1 	0 	1 	1 
+	0 	1 	0 	0 	1 	0 	1 
+
+	Time Complexity: O(NxMxO) where N = # of vertices,
+	M = max adjacent nodes and O = total # of edges
+
+3. Convert from an incidence matrix to adjacency list 
+
+	Vertex 0: 0 1 4 
+	Vertex 1: 1 0 2 3 4 
+	Vertex 2: 2 1 3 
+	Vertex 3: 3 1 2 4 
+	Vertex 4: 4 0 1 3 
+
+	Time Complexity: O(NxM) becuase you have to linearly
+	scan all elements of a NxM 2D incidence matrix, where
+	N = # of vertices and M= # of edges in addition
+	to inserting values into Linked List in O(1) time.
