@@ -1,3 +1,5 @@
+package exercise.one.setImplementations;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -197,7 +199,7 @@ public class BinaryTree {
 			//Insert the values
 		
 		//LOAD PRIDE AND PREJUIDICE TEXT
-		File inputFile = new File("pride-and-prejudice.txt");
+		File inputFile = new File("src/exercise/one/setImplementations/pride-and-prejudice.txt");
 		
 		BufferedReader br = new BufferedReader(new FileReader(inputFile));
 		
@@ -248,7 +250,7 @@ public class BinaryTree {
 		/* TEST SEARCH COMPLEXITY*/
 		
 		//Read through the file and Tokenize to alpha-numeric characters. 
-		File searchFile = new File("words-shuffled.txt");
+		File searchFile = new File("src/exercise/one/setImplementations/words-shuffled.txt");
 		
 		BufferedReader sr = new BufferedReader(new FileReader(searchFile));
 		

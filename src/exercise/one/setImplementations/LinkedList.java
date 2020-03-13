@@ -1,3 +1,5 @@
+package exercise.one.setImplementations;
+
 import java.io.*;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -225,7 +227,7 @@ public class LinkedList {
 			//Insert the values
 		
 		//LOAD PRIDE AND PREJUIDICE TEXT
-		File inputFile = new File("pride-and-prejudice.txt");
+		File inputFile = new File("src/exercise/one/setImplementations/pride-and-prejudice.txt");
 		
 		BufferedReader br = new BufferedReader(new FileReader(inputFile));
 		
@@ -276,7 +278,7 @@ public class LinkedList {
 		/* TEST SEARCH COMPLEXITY*/
 		
 		//Read through the file and Tokenize to alpha-numeric characters. 
-		File searchFile = new File("words-shuffled.txt");
+		File searchFile = new File("src/exercise/one/setImplementations/words-shuffled.txt");
 		
 		BufferedReader sr = new BufferedReader(new FileReader(searchFile));
 		
